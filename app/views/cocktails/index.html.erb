@@ -2,7 +2,7 @@
 
 <% @cocktails.each do |cocktail| %>
   <ul>
-    <%= cl_image_tag cocktail.photo.url(:size_index) %>
+    <%= cl_image_tag cocktail.photo.url(:size_index), width: 150, height: 200, scrop: :scale %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
     <%= link_to "delete", cocktail_path(cocktail), method: :delete %>
   </ul>
