@@ -1,4 +1,4 @@
-  <%= cl_image_tag @cocktail.photo.url(:size_show), width: 250, height: 400, scrop: :scale %>
+  <%= cl_image_tag @cocktail.photo.url(:size_show) %>
   <h2><%= @cocktail.name %></h2>
 
 <%= link_to "add a new dose/ingredient to your cocktail", new_cocktail_dose_path(@cocktail) %>

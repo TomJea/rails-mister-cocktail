@@ -11,10 +11,10 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   version :size_index do
-    cloudinary_transformation effect: "brightness:30", width: 100, height: 200, scrop: :scale
+    cloudinary_transformation effect: "brightness:30", width: 100, height: 200, crop: :scale
   end
 
   version :size_show do
-    cloudinary_transformation effect: "brightness:30", width: 200, height: 400, scrop: :scale
+    cloudinary_transformation effect: "brightness:30", width: 200, height: 400, crop: :scale
   end
 end
